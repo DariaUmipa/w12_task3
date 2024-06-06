@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id = wordId> </h1>
+    <script>
+        const alphabet = ["а", "б", "в", "г", "д", "е", "ё", "ж", "з", "и", "й", "к", "л", "м", "н", "о", "п", "р", "с", "т", "у", "ф", "х", "ц", "ч", "ш", "щ", "ъ", "ы", "ь", "э", "ю", "я"];
+        const randomIndex1 = Math.floor(Math.random()* alphabet.length);
+        const randomLetter1 = alphabet[randomIndex1];
+        const randomIndex2 = Math.floor(Math.random()* alphabet.length);
+        const randomLetter2 = alphabet[randomIndex2];
+        const randomIndex3 = Math.floor(Math.random()* alphabet.length);
+        const randomLetter3 = alphabet[randomIndex3];
+        const randomIndex4 = Math.floor(Math.random()* alphabet.length);
+        const randomLetter4 = alphabet[randomIndex4];
+        const randomWord = randomLetter1 + randomLetter2 + randomLetter3 + randomLetter4;
+        console.log("Полученное случайное слово: " + randomWord);
+        const word = document.getElementById("wordId");
+        word.textContent = "Полученное случайное слово: " + randomWord;
+        
+
+
+    </script>
+</body>
+</html>
